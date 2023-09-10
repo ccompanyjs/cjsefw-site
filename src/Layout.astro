@@ -3,15 +3,22 @@ export interface Props {
     title?: string;
 }
 const { title } = Astro.props;
+let lang: string[] | string = Astro.url.pathname
+    .split('/')[2]
+if(!lang) lang = "es"
+else lang.toString()
 ---
 
-<html lang="en">
+<html lang={lang}>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{!title ? 'CJSE FrameWork' : `${title} - CJSE FrameWork`}</title>
+    <meta charset="UTF-8">
+    <meta name="theme-color">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon", href="/cjsefw-site/favicon.svg" />
+    <script src="https://kit.fontawesome.com/890a235ef9.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="font-jbmono bg-gray-950 bg-heroPattern">
+    <slot />
 </body>
 </html>
