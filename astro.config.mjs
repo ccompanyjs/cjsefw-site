@@ -36,6 +36,6 @@ export default defineConfig({
     background_color: 'rgba(3, 7, 18, 1)',
     display: 'fullscreen',
   })],
-  site: "https://cjsenterprise.github.io",
+  site: "https://cjsenteprise.github.io",
   base: "/cjsefw-site"
 });
