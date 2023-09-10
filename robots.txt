@@ -15,4 +15,4 @@ Disallow: /search
 Allow: /
 Crawl-delay: 10
 Clean-param: ref /articles/
-Sitemap: https://cjsenterprise.github.io/cjsefw-site/sitemap-index.xml
+Sitemap: https://cjsenteprise.github.io/cjsefw-site/sitemap-index.xml
